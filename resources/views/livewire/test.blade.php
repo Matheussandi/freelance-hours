@@ -5,7 +5,10 @@
 
     <ul>
         @foreach ($users as $user)
-        <li>{{ $user->name }}</li>
+            <li style="display: flex; align-items: center;">
+                <img src="{{ $user->avatar }}" alt="{{ $user->avatar }}" width="50" height="50">
+                {{ $user->name }}
+            </li>
         @endforeach
     </ul>
 </div>
