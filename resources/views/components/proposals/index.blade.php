@@ -16,7 +16,6 @@
 
     <div class="py-4">
         <div class="flex flex-col gap-7">
-
             @foreach ($proposals->take(10) as $proposal)
                 <x-proposals.item :$proposal :position="$loop->index" />
             @endforeach
